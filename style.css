@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0F0C08;
+    display: grid;
+    justify-items: center;
+}
+.skerp {
+    height: 250px;
+    width: 250px;
+    border: 1px solid #ffffff;
+    position: static;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.skerp:before {
+content: '';
+height: 300px;
+width: 150%;
+position: static;
+background: conic-gradient(#fd004c, #fe9000, #fff020, #3edf4b, #3363ff, #b102b7, #fd004c);
+left: -25%;
+top: -25%;
+animation: spin 1.5s infinite linear;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+.skerp:after {
+    content: "rainbow";
+    position: absolute;
+    background-color: #1c1b29;
+    height: 93%;
+    width: 93%;
+    top: 3.5%;
+    left: 3.5%;
+    color: #ffffff;
+    border: 5px;
+    letter-spacing: 6px;
+    display: grid;
+    place-items: center;
+}
+nav {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100vw;
+    background-color: #080705;
+    z-index: 1;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+nav a:hover {
+    color: rgb(182, 146, 146);
+    transition: .5s linear;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+}
+li {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+.skerpde {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.anime {
+    height: 75px;
+    width: 250px;
+    border: 1px solid #ffffff;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0, 20px, 35px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.anime:before {
+    content: '';
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    right: -13%;
+    bottom: -70px;
+    background: conic-gradient(#fd004c, #fe9000, #fff020, #3edf4b, #3363ff, #b102b7, #fd004c);
+    animation: spin 1.5s infinite linear;
+}
+.anime:after {
+    content: '';
+    background-color: #1c1b29;
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    color: #ffffff;
+    border: 5px;
+    letter-spacing: 6px;
+    display: grid;
+    place-items: center;
+}
+header img {
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid rgb(55, 129, 158);
+    height: 40px;
+}
+header img:hover {
+    transition: .5s linear;
+    border: 3px solid rgb(148, 22, 22);
+    width: 45px;
+}
+h1{
+    color: whitesmoke;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+header h4 {
+    color: rgb(182, 146, 146);
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-left: 1px solid rgb(182, 146, 146);
+    border-right: 1px solid rgb(182, 146, 146);
+    border-top: 1px solid rgb(182, 146, 146);
+    padding: 10px;
+}
+.about{
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#first {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.categories {
+    text-decoration: underline;
+    padding-bottom: 20px;
+    /* margin-top: 300px; */
+}
+p {
+    color: rgb(182, 146, 146);
+    font-weight: bold;
+    font-size: 26px;
+}
+
+#skills {
+    height: 250px;
+    width: 80vw;
+    border: 1px solid #ffffff;
+    position: relative;
+    transform: translate(-20%, -20%);
+    top: 20%;
+    left: 20%;
+    border-radius: 5px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+#skills:before {
+    content: '';
+height: 570%;
+width: 140%;
+position: absolute;
+background: conic-gradient(#fd004c, #fe9000, #fff020, #3edf4b, #3363ff, #b102b7, #fd004c);
+left: -20%;
+top: -150%;
+animation: spin 2.5s infinite linear;
+}
+#skills:after {
+    content: 'JAVASCRIPT | NODE | REACT | HTML/CSS | SASS | POSTGRESQL | EXPRESS | REDUX';
+    position: absolute;
+    background-color: #1c1b29;
+    height: 200px;
+    width: 95%;
+    top: 10.5%;
+    left: 2.5%;
+    color: #ffffff;
+    border: 5px;
+    letter-spacing: 6px;
+    display: grid;
+    place-items: center;
+}
+h2 {
+    color: white;
+}
+@media(max-width: 600px) {
+    nav {
+        width: 100%;
+        left: auto;
+    }
+}
+section h2 {
+    position: relative;
+    /* top: -10%; */
+    left: -20%;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+section p {
+    color: #ebe4e450;
+    font-weight: bolder;
+}
+#projects {
+    /* padding-top: 30px; */
+    width: 80vw;
+    display: grid;
+    grid-template: 300px 300px / 1fr 1fr;
+    border: 1px solid rgb(182, 146, 146);
+    /* background-color: #1c1b29; */
+    /* background-color: rgb(182, 146, 146); */
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 296px;
+}
+section img:hover {
+    opacity: .5;
+}
+footer {
+    height: 100px;
+    width: 98%;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.github {
+    width: 55px;
+    height: 55px;
+}
+.github:hover {
+    border: 2px solid white;
+    transition: .3s linear;
+}
+h5 {
+    color: white;
+}
+@media(max-width: 600px) {
+    #projects {
+        grid-template: repeat(4, 250px) / 1fr;
+        
+    }
+    #projects p {
+        font-size: 18px;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+    }
+    img {
+        height: 250px;
+    }
+    .project-desc {
+        height: 250px;
+    }
+}
+@media(max-width: 800px) {
+    #projects {
+        width: 90vw;
+    }
+    #projects p {
+        font-size: 18px;
+    }
+    section {
+        height: 250px;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* opacity: 1; */
+    }
+    section img{
+        height: 250px;
+    }
+}
