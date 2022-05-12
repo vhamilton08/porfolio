@@ -4,7 +4,27 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #0F0C08;
+    
+    /* background-color: #0F0C08; */
+    
+    /* fallback for old browsers */
+    /* background: #232526;  */
+     /* Chrome 10-25, Safari 5.1-6 */
+/* background: -webkit-linear-gradient(to right, #414345, #232526);  */
+
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /* background: linear-gradient(to right, #414345, #232526);  */
+
+ /* fallback for old browsers */
+ background: #ECE9E6;
+
+   /* Chrome 10-25, Safari 5.1-6 */
+   background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  
+
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+
+
     display: grid;
     justify-items: center;
 }
@@ -86,7 +106,7 @@ header {
     align-items: center;
     padding-top: 5%;
 }
-.skerpde {
+.header-content {
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -138,7 +158,12 @@ header img:hover {
     width: 45px;
 }
 h1{
-    color: whitesmoke;
+    /* font-family: 'Flix'; */
+    /* color: whitesmoke; */
+    /* -webkit-text-fill-color: transparent; */
+    /* background-color: linear-gradient( 135deg, #FFAA85 10%, #B3315F 100%);; */
+        /* -webkit-background-clip: text; */
+    /* background-image: linear-gradient( 135deg, #FFAA85 10%, #B3315F 100%); */
     letter-spacing: 6px;
     font-weight: bold;
 }
@@ -171,8 +196,9 @@ header h4 {
     /* margin-top: 300px; */
 }
 p {
-    color: rgb(182, 146, 146);
-    font-weight: bold;
+    /* color: rgb(182, 146, 146); */
+    color: hwb(30 4% 93%);
+    /* font-weight: bold; */
     font-size: 26px;
 }
 
@@ -213,13 +239,57 @@ animation: spin 2.5s infinite linear;
     place-items: center;
 }
 h2 {
-    color: white;
+    /* color: white; */
+    color: rgb(182, 146, 146);
+    
+
 }
+#form-section {
+    position: relative;
+    left: 50%;
+    height: 100vh;
+    background-color: #848282;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.btn-grad {background-image: linear-gradient(to right, #603813 0%, #b29f94  51%, #603813  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+/* #projects {
+    padding: 50px;
+    grid-gap: 20px;
+} */
 @media(max-width: 600px) {
     nav {
         width: 100%;
         left: auto;
     }
+}
+section {
+    border-bottom: 1px solid black;
+    height: 100%;
 }
 section h2 {
     position: relative;
@@ -229,7 +299,7 @@ section h2 {
     text-decoration: underline;
 }
 section p {
-    color: #ebe4e450;
+    color: #080705;
     font-weight: bolder;
 }
 #projects {
@@ -237,6 +307,8 @@ section p {
     width: 80vw;
     display: grid;
     grid-template: 300px 300px / 1fr 1fr;
+    padding: 0 10px;
+    grid-row-gap: 50px;
     border: 1px solid rgb(182, 146, 146);
     /* background-color: #1c1b29; */
     /* background-color: rgb(182, 146, 146); */
@@ -254,7 +326,7 @@ section img:hover {
 footer {
     height: 100px;
     width: 98%;
-    border-top: 1px solid white;
+    border-top: 2px solid white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -268,7 +340,8 @@ footer {
     transition: .3s linear;
 }
 h5 {
-    color: white;
+    color: #080705;
+
 }
 @media(max-width: 600px) {
     #projects {
